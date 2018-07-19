@@ -37,6 +37,7 @@ class Rule extends React.Component {
     this.node.field = event.target.value;
     const field = this.getFieldByName(event.target.value);
     const rule = this.generateRuleObject(field, this.node);
+    console.log(rule);
     this.setState({ currField: rule });
     this.props.onChange();
   }
@@ -45,6 +46,7 @@ class Rule extends React.Component {
     this.node.operator = event.target.value;
     const field = this.getFieldByName(this.node.field);
     const rule = this.generateRuleObject(field, this.node);
+    console.log(rule);
     this.setState({ currField: rule });
     this.props.onChange();
   }
@@ -57,6 +59,7 @@ class Rule extends React.Component {
     this.node.value = event.target.value;
     const field = this.getFieldByName(this.node.field);
     const rule = this.generateRuleObject(field, this.node);
+    console.log(rule);
     this.setState({ currField: rule });
     this.props.onChange();
   }
